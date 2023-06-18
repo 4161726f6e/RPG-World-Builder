@@ -4,8 +4,11 @@ Build a world, story, and characters for a RPG or fantasy story
 Usage:
 
 world_builder.py -h -o -m
+
 -h : Display this message
+
 -o : Include optional story elements
+
 -m : Create a new map
 
 Generate a story for a role-playing game.
@@ -34,19 +37,15 @@ NOTE: The map takes a few minutes to generate. Go grab a cup of coffee and come 
 
 For a more robust story and character sheet generation, include the optional elements: python world_builder.py -o
 NOTE: This option asks several questions:
-    - How many player characters (PCs) do you want generated (default is 1)
-    - The level of the PCs (1-20, default is 1)
-    - The class for each PC (default is a random choice)
-        Classes are:
-            Fighter, Ranger, Wizard, Mage, Priest, Cleric, Druid, Thief, Bard, Paladin,
-            Fighter/Thief, Fighter/Cleric, Fighter/Druid, Fighter/Mage, Fighter/Illusionist,
-            Fighter/Mage/Cleric, Fighter/Mage/Druid, Fighter/Mage/Thief,
-            Cleric/Illusionist, Cleric/Thief, Cleric/Ranger, Cleric/Mage,
-            Illusionist/Thief, Mage/Thief, or Druid/Mage
-    - The level of the master villain (default is 1 level higher than the level of the PCs)
-    - Story generation: A simple story outline where the names match the PCs and villain or a full randomized plot outline
-        * If the full plot is chosen, an additional question will ask for a standard plot or all optional plot elements
-        * If the full plot is chosen, an additional question will ask if you want the story printed to the screen or to a JSON file
+- How many player characters (PCs) do you want generated (default is 1)
+- The level of the PCs (1-20, default is 1)
+- The class for each PC (default is a random choice)
+  * Classes are:
+    * Fighter, Ranger, Wizard, Mage, Priest, Cleric, Druid, Thief, Bard, Paladin, Fighter/Thief, Fighter/Cleric, Fighter/Druid, Fighter/Mage, Fighter/Illusionist, Fighter/Mage/Cleric, Fighter/Mage/Druid, Fighter/Mage/Thief, Cleric/Illusionist, Cleric/Thief, Cleric/Ranger, Cleric/Mage, Illusionist/Thief, Mage/Thief, or Druid/Mage
+- The level of the master villain (default is 1 level higher than the level of the PCs)
+- Story generation: A simple story outline where the names match the PCs and villain or a full randomized plot outline
+  * If the full plot is chosen, an additional question will ask for a standard plot or all optional plot elements
+  * If the full plot is chosen, an additional question will ask if you want the story printed to the screen or to a JSON file
         
 Performing python world_builder.py -om will create a new map and create character sheets as described above.
 
@@ -58,30 +57,30 @@ The simple story generator option picks story elements from simple text files wi
 
 EXAMPLE:
 The default list of journey elements for the hero located in world_generator/story_options/plot/journey.txt include:
-    - rescue the princess
-    - prove their worth
-    - stop an imminent catastrophe
-    - avenge the death of a loved one
-    - bring order to chaos
+- rescue the princess
+- prove their worth
+- stop an imminent catastrophe
+- avenge the death of a loved one
+- bring order to chaos
     
 When generating a simple story, one of these will be picked at random. To add another option "discover the meaning of life", simply add a new line with that option, as follows:
-    - rescue the princess
-    - prove their worth
-    - stop an imminent catastrophe
-    - avenge the death of a loved one
-    - bring order to chaos
-    - discover the meaning of life
+- rescue the princess
+- prove their worth
+- stop an imminent catastrophe
+- avenge the death of a loved one
+- bring order to chaos
+- discover the meaning of life
     
 Customization options exist under the following file locations:
-    - world_generator/story_options/culture/
-        * politics.txt
-        * resources.txt
-        * war.txt
-    - world_generator/story_options/plot/
-        * conflict.txt
-        * journey.txt
-        * resolution.txt
-    - world_generator/story_options/random_elements/
-        * encounters.txt
-        * hinderances.txt
-        * treasures.txt
+- world_generator/story_options/culture/
+  * politics.txt
+  * resources.txt
+  * war.txt
+- world_generator/story_options/plot/
+  * conflict.txt
+  * journey.txt
+  * resolution.txt
+- world_generator/story_options/random_elements/
+  * encounters.txt
+  * hinderances.txt
+  * treasures.txt
